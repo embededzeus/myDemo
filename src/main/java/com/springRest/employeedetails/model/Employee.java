@@ -35,5 +35,5 @@ public class Employee implements Serializable {
     @LastModifiedDate
     private Date updatedAt;
 
-    // Getters and Setters ... (Omitted for brevity)
+
 }
