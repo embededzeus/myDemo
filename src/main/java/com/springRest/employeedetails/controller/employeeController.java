@@ -44,11 +44,11 @@ public class employeeController {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee", "id", employeeId));
 
-        employee.setTitle(employeeDetails.getTitle());
-        employee.setContent(employeeDetails.getContent());
+        employee.setName(employeeDetails.getName());
+        employee.setRole(employeeDetails.getRole());
 
         Employee updatedEmployee = employeeRepository.save(employee);
-        return updatedNote;
+        return updatedEmployee;
     }
 
     // Delete a employee
